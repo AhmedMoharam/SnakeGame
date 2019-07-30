@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SFML_HOME>C:\SFML-2.4.2</SFML_HOME>
+    <STATIC_LIB>-s</STATIC_LIB>
+    <DEBUG_LIB>-d</DEBUG_LIB>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_PropertySheetDisplayName>DebugPropertySheet</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="SFML_HOME">
+      <Value>$(SFML_HOME)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="STATIC_LIB">
+      <Value>$(STATIC_LIB)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DEBUG_LIB">
+      <Value>$(DEBUG_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
